@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2018-07-20T03:28:06.092Z",
+    "end": "2018-07-20T03:28:06.109Z",
+    "duration": 17,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "f981810b-fb3d-4040-b962-f2153e41a193",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "fffcdab8-e5c1-491f-b2f0-0c32e61f2a51",
+        "title": "测试接口",
+        "fullFile": "C:\\Users\\FF\\Desktop\\test_demo\\service\\router.spec.js",
+        "file": "\\service\\router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test接口测试",
+            "fullTitle": "测试接口 test接口测试",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "// axios.get('http://localhost:3000/test')\n//     .then(function(res){\n//         expect(res.status).to.equal(200)\n//         console.log(\"请求数据成功~~\")\n//         if(!res.data){\n//             done()\n//         }else{\n//             done(new Error(\"结果不符合预期！\"))\n//         }\n//     })\n//     .catch(function(err){\n//         done(err)\n//     })\n  \nrequest('http://localhost:3000/test')\n.expect(res.status).to.equal(200)\n.end(function(res){\n    console.log(\"res\")\n    if(res.data){\n        done()\n    }else{\n        done(new Error(\"结果不符合预期！\"))\n    }\n})",
+            "err": {
+              "message": "ReferenceError: res is not defined",
+              "estack": "ReferenceError: res is not defined\n    at Context.<anonymous> (service\\router.spec.js:26:17)"
+            },
+            "isRoot": false,
+            "uuid": "46175910-3f16-4b9d-8da7-88efe0cd026e",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "46175910-3f16-4b9d-8da7-88efe0cd026e"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
